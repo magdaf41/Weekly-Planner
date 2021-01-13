@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Planner</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <div class="main-header-content">
+        <h1>Weekly Planner</h1>
+        <hr />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          aspernatur qui rem ex commodi modi possimus dolore quasi ullam dolorum
+          id ab dolor aliquam, perferendis odit omnis nulla culpa fuga.
+        </p>
+      </div>
+    </header>
+
+    <nav class="main-menu">
+      <ul class="list">
+        <li class="menu-item"><a href="#monday"> Monday</a></li>
+        <li class="menu-item"><a href="#thursday">Thusday</a></li>
+        <li class="menu-item"><a href="#wednesdey">Wednesdey</a></li>
+        <li class="menu-item"><a href="#thursday">Thursday</a></li>
+        <li class="menu-item"><a href="#friday">Friday</a></li>
+        <li class="menu-item"><a href="#saturday">Saturday</a></li>
+        <li class="menu-item"><a href="#sunday">Sunday</a></li>
+      </ul>
+    </nav>
+
+    <div class="slider">
+      <div class="slider-items">
+        <!-- <section class="main-section item active">
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          eos animi natus, beatae harum aut commodi ullam quibusdam? Repudiandae
+          illum provident illo natus repellendus. Assumenda, at delectus. Autem,
+          nemo laudantium.
+        </p>
+      </div>
+    </section> -->
+
+        <section id="monday" class="item active">
+          <div class="container">
+            <!-- to do list -->
+            <div class="header-to-do-list">
+              <header>
+                <h3>ToDo List Monday</h3>
+                <input
+                  type="text"
+                  class="to-do-input"
+                  placeholder="items to do"
+                />
+                <button class="add-btn">Add</button>
+              </header>
+            </div>
+
+            <div class="items-to-do-list">
+              <p class="alert-info">No tasks on the list</p>
+              <ul>
+                <!-- <li id="test" class="item-to-do">
+                  Read a book
+                  <div class="tools">
+                    <button class="complete">
+                      <i class="fa fa-check"></i>
+                    </button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                    <button class="next-day">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </li>
+                <li id="test1" class="item-to-do">
+                  prasować
+                  <div class="tools">
+                    <button class="complete">
+                      <i class="fa fa-check"></i>
+                    </button>
+                    <button class="edit">EDIT</button>
+                    <button class="delete"><i class="fas fa-times"></i></button>
+                    <button class="next-day">
+                      <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="thursday" class="item">
+          <div class="container">
+            <!-- to do list -->
+            <div class="header-to-do-list">
+              <header>
+                <h3>ToDo List Thursday</h3>
+                <input
+                  type="text"
+                  class="to-do-input"
+                  placeholder="items to do"
+                />
+                <button class="add-btn">Add</button>
+              </header>
+
+              <div class="items-to-do-list">
+                <p class="alert-info">No tasks on the list</p>
+                <ul>
+                  <!-- <li id="test" class="to-do-list-item"></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="wednesdey" class="item">
+          <div class="container">
+            <!-- to do list -->
+            <div class="header-to-do-list">
+              <header>
+                <h3>ToDo List Wednesdey</h3>
+                <input
+                  type="text"
+                  class="to-do-input"
+                  placeholder="items to do"
+                />
+                <button class="add-btn">Add</button>
+              </header>
+            </div>
+
+            <div class="items-to-do-list">
+              <p class="alert-info">No tasks on the list</p>
+              <ul>
+                <!-- <li id="test" class="to-do-list-item"></li> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="left-slide"><</div>
+      <div class="right-slide">></div>
+    </div>
+
+    <div class="popup">
+      <h3>Edytuj zadanie:</h3>
+      <div class="popup-body">
+        <p class="popup-info"></p>
+        <input
+          type="text"
+          class="popup-input"
+          placeholder="Implement new task..."
+        />
+        <button class="popup-btn accept">Accept</button>
+        <button class="popup-btn cancel">Cancel</button>
+      </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
